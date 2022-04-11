@@ -5,7 +5,7 @@ import Welcome from "./Welcome";
 
 function App() {
   return (
-    <div className="App is-family-code" >
+    <div className="App is-family-code" id='app' >
     <NavBar/>
     <Welcome/>
     <Footer/>
