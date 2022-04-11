@@ -1,6 +1,9 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
+  const element = <FontAwesomeIcon icon={faCoffee} />
   return (
     <nav class="navbar is-fixed" role="navigation" aria-label="main navigation">
       <div className="container pt-5">
@@ -11,9 +14,10 @@ const NavBar = () => {
           </a>
         </div>
       </div>
+     
       <div class="navbar-brand">
         <a class="navbar-item" href="https://bulma.io">
-          <p className="is-family-code has-text-weight-bold is-size-3">Andrés Beltrán</p>
+          <p className=" has-text-weight-bold is-size-3">Andrés Beltrán</p>
         </a>
 
         <a
