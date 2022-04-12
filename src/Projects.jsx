@@ -10,6 +10,7 @@ const Projects = () => {
       </div>
      
         <div className="container is-flex is-flex-wrap-wrap">
+          <div className="columns is-flex is-flex-wrap-wrap " style={{maxWidth: "90vw"}}>
       {projects.map((project) => (
         <Project
          
@@ -21,7 +22,7 @@ const Projects = () => {
         />
       ))}
       </div>
-     
+      </div>
     </section>
   );
 };

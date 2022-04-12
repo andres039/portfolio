@@ -2,7 +2,7 @@ export  const projects = [
   {
     title: 'Upcycle Montreal',
     description: 'A web app that allows Montrealers to extend the life of discarded furniture by displaying their location on an interactive map.',
-    stack: ['PostgreSQL ' , 'Express ' , 'React ' , 'Node '],
+    stack: ['PostgreSQL' , 'Express' , 'React' , 'Node'],
     type: 'Team work',
     image: 'https://github.com/andres039/Upcycle-Cradle-Montreal/raw/master/frontend/public/images/demo.gif?raw=true',
     code: 'https://github.com/andres039/Upcycle-Cradle-Montreal'
@@ -10,7 +10,7 @@ export  const projects = [
   {
     title: 'Scheduler-dashboard',
     description: 'A web app that allows students to set up apointments with Mentors.',
-    stack:  ['React ', 'Storybook', 'Cypress' ],
+    stack:  ['React', 'Storybook', 'Cypress' ],
     type: 'Solo',
     image: 'https://raw.githubusercontent.com/andres039/scheduler/main/docs/Main.png',
     code: 'https://github.com/andres039/scheduler'
@@ -18,7 +18,7 @@ export  const projects = [
   {
     title: 'Scheduler-dashboard',
     description: 'An URL shortener including the logic for login using bcrypt to keep passwords safe.',
-    stack:  ['Node', 'Express', 'EJS', 'bcrypt' ],
+    stack:  ['Node', 'Express', 'EJS', 'Bcrypt' ],
     type: 'Solo',
     image: 'https://raw.githubusercontent.com/andres039/tinyapp/master/docs/urls-page.png', 
     code: 'https://github.com/andres039/tinyapp',
