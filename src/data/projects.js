@@ -1,3 +1,5 @@
+import track from './track.png'
+
 export  const projects = [
   {
     title: 'Upcycle Montreal',
@@ -25,10 +27,10 @@ export  const projects = [
   },
   {
     title: 'Track',
-    description: 'Track is an app that allows musicians to practice scales daily keeping a record of the speed achieved every day at the end of practice. The user has access to a calendar that keeps information regarding the scale that was practiced and the speed in BPM at the end of practice.',
+    description: 'Track is an app that allows musicians to practice scales daily keeping a record of the speed achieved every day at the end of practice.',
     stack:  ['Node', 'Express', 'Prisma', 'React', 'Bootstrap', 'Bulma' ],
     type: 'Team work',
-    image: 'https://troopl-portfolio.s3.eu-west-1.amazonaws.com/18fnafjpanv1emjy9i244sqbh5gd?response-content-disposition=inline%3B%20filename%3D%22Inside.png%22%3B%20filename%2A%3DUTF-8%27%27Inside.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJVWH45TXBJODL24A%2F20220412%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20220412T000116Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=e8902a0fc592d34babc43652f17b19ae0329818de1ef3cdca89f04dbfaa4186a', 
+    image: (track), 
     code: 'https://github.com/andres039/Track',
   },
   

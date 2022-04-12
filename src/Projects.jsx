@@ -1,27 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import Project from "./Project";
 import { projects } from "./data/projects";
-
+import { motion } from "framer-motion";
 const Projects = () => {
+  const [timeDelay, setTimeDelay] = useState(0);
   return (
-    <section className="container  mb-4 mt-6 pt-6" style={{ minHeight: "90vh" }}>
-      <div className="is-flex is-justify-content-center">
-        <h1 className="title pb-6">Some of my Projects:</h1>
+    <section
+      id="projects"
+      className="container mb-6 pb-6  pt-6"
+      style={{ minHeight: "100vh", marginTop: "20rem" }}
+    >
+      <div
+        className="is-flex is-justify-content-center  "
+        style={{ width: "100%" }}
+      >
+        <motion.h1
+          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{ duration: 1 }}
+          className="title mt-6 pt-6 mb-6 pb-6"
+        >
+          Some of my Projects:
+        </motion.h1>
       </div>
-     
-        <div className="container is-flex is-flex-wrap-wrap">
-          <div className="columns is-flex is-flex-wrap-wrap " style={{maxWidth: "90vw"}}>
-      {projects.map((project) => (
-        <Project
-         
-          image={project.image}
-          title={project.title}
-          description={project.description}
-          stack={project.stack}
-          type={project.type}
-        />
-      ))}
-      </div>
+
+      <div className="container is-flex is-justify-content-center">
+        <div
+          className="columns is-flex is-flex-wrap-wrap"
+          style={{ maxWidth: "100vw" }}
+        >
+          {projects.map((project, index) => (
+            <Project
+              image={project.image}
+              title={project.title}
+              description={project.description}
+              stack={project.stack}
+              type={project.type}
+              code={project.code}
+              timeDelay={index !== 0 ? index - index/2 : index}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
