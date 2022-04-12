@@ -8,11 +8,14 @@ const NavBar = () => {
 
   return (
     <nav
-      className="navbar is-fixed pb-4"
+      className="navbar is-fixed-top pb-4"
       role="navigation"
       aria-label="main navigation"
     >
-      <div className="container pt-5">
+      <div className="container pt-5" 
+      // style={{borderBottom: '1px black solid'}}
+      
+      >
         {toggle !== "is-active" && (
           <div
             className={`navbar-start navbar-menu ${toggle}`}
