@@ -28,10 +28,10 @@ const api = <FontAwesomeIcon icon={faTape} size="2x" color="green" />;
 
 const Skills = () => {
   return (
-    <section className="hero is-large" style={{ maxHeight: "100vh" }}>
+    <section className="hero is-large" style={{ maxHeight: "100vh", maxWidth: "100vw"   }}>
       <div
         className="container hero-head mb-6 pb-1"
-        style={{ minWidth: "100vw", maxWidth: "100vw" }}
+        style={{ minWidth: "100vw", maxWidth: "100%" }}
       >
         <div className="is-flex isflex-wrap-wrap is-justify-content-center is-align-items-center pt-4 pb-6 is-align-content-center">
           <motion.h1
@@ -47,7 +47,7 @@ const Skills = () => {
           <ul
          
             className=" is-flex is-flex-wrap-wrap is-justify-content-center  pt-6 mt-6"
-            style={{ maxWidth: "100vw" }}
+            style={{ maxWidth: "90vw" }}
           >
             <li className="is-active">
               <span>

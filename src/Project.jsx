@@ -11,7 +11,7 @@ const Project = ({ title, image, description, stack, type, code, timeDelay }) =>
       whileInView={{opacity: 1}} initial={{opacity: 0}} transition={{duration: 0.5, delay: timeDelay}}
       
       className="column is-half is-flex is-justify-content-center"
-      style={{ maxWidth: "100%" }}
+      style={{ maxWidth: "90%" }}
     >
       <div
         className="card p-4 m-5 is-flex-direction-column is-justify-content-center"
@@ -24,13 +24,13 @@ const Project = ({ title, image, description, stack, type, code, timeDelay }) =>
         </div>
         <div className="card-header ">
           <h1 className="card-header-title">{title}</h1>
-          <div
+          <div 
             className="column is-flex is-justify-content-end"
             style={{ minWidth: "60%" }}
           >
-            <a href={code} target="_blank">
+            <motion.a  href={code} target="_blank" whileInView={{x: 0 }} initial={{x: -40}} transition={{duration: 0.5}}>
               <p class="subtitle is-7 p-2">{linkCode} Source Code</p>
-            </a>
+            </motion.a>
           </div>
         </div>
 

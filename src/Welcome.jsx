@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Welcome = () => {
   return (
-    <section id='top'className="section" style={{minHeight: '87vh'}}>
+    <section id='top'className="section" style={{minHeight: '87vh', maxWidth: '90vw'}}>
     <div className="container is-flex is-align-items-center" style={{minHeight: '90vh', maxWidth: '70vw'}}>
       <section className="section mb-6">
       <motion.p className="content is-size-3 has-text-weight-semi-bold has-text-dark" whileInView={{opacity: 1}} initial={{opacity: 0}} transition={{duration: 1}} >

@@ -12,9 +12,10 @@ const NavBar = () => {
       // animate={{ y: 0 }}
       // initial={{ y: -150 }}
       // transition={{ duration: 0.5 }}
-      className="navbar is-fixed-top "
+      className="navbar is-fixed-top"
       role="navigation"
       aria-label="main navigation"
+      style={{maxWidth: '100vw'}}
     >
       <div
         className="container pt-5"

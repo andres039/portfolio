@@ -8,10 +8,10 @@ const Projects = () => {
     <section
       id="projects"
       className="container mb-6 pb-6  pt-6"
-      style={{ minHeight: "100vh", marginTop: "20rem" }}
+      style={{ minHeight: "100vh", maxWidth: "90vw",marginTop: "20rem" }}
     >
       <div
-        className="is-flex is-justify-content-center  "
+        className="is-flex is-justify-content-center is-align-content-center"
         style={{ width: "100%" }}
       >
         <motion.h1
@@ -19,6 +19,7 @@ const Projects = () => {
           initial={{ opacity: 0 }}
           transition={{ duration: 1 }}
           className="title mt-6 pt-6 mb-6 pb-6"
+          
         >
           Some of my Projects:
         </motion.h1>

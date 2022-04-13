@@ -16,7 +16,7 @@ const Footer = () => {
       animate={{ x: 0 }}
       transition={{delay: 1}}
       className="navbar is-fixed-bottom mb-5 pl-4"
-      style={{ backgroundColor: "transparent" }}
+      style={{ backgroundColor: "transparent", maxWidth: '100vw' }}
     >
       <div className="container">
         <div className="navbar-item pr-6">

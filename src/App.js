@@ -7,7 +7,7 @@ import Projects from "./Projects";
 
 function App() {
   return (
-    <div className="App is-family-code" id='app' >
+    <div className="App is-family-code" id='app'>
     <NavBar/>
     <Welcome/>
     <Skills/>
