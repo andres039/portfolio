@@ -28,7 +28,7 @@ const Project = ({ title, image, description, stack, type, code, timeDelay }) =>
             className="column is-flex is-justify-content-end"
             style={{ minWidth: "60%" }}
           >
-            <motion.a  href={code} target="_blank" whileInView={{x: 0 }} initial={{x: -40}} transition={{duration: 0.5}}>
+            <motion.a className='tag' href={code} target="_blank" whileInView={{x: 0 }} initial={{x: -40}} transition={{duration: 0.5}}>
               <p class="subtitle is-7 p-2">{linkCode} Source Code</p>
             </motion.a>
           </div>
