@@ -9,17 +9,14 @@ const NavBar = () => {
 
   return (
     <motion.nav
-      // animate={{ y: 0 }}
-      // initial={{ y: -150 }}
-      // transition={{ duration: 0.5 }}
-      className="navbar is-fixed-top"
+      className="navbar is-fixed-top is-flex"
       role="navigation"
       aria-label="main navigation"
       style={{ maxWidth: "100vw" }}
     >
       <div
         className="container pt-5"
-        // style={{borderBottom: '1px black solid'}}
+         style={{borderBottom: '1px black solid'}}
       >
         {toggle !== "is-active" && (
           <div
@@ -51,7 +48,7 @@ const NavBar = () => {
           </motion.a>
 
           <button
-            className={`navbar-burger ${toggle}`}
+            className={`navbar-burger ${toggle} mr-4  is-align-self-center`}
             aria-label="menu"
             aria-expanded="true"
             data-target="navbarBasicExample"
