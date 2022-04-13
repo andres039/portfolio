@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Project from "./Project";
 import { projects } from "./data/projects";
 import { motion } from "framer-motion";
 const Projects = () => {
-  const [timeDelay, setTimeDelay] = useState(0);
   return (
     <section
       id="projects"

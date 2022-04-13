@@ -15,7 +15,7 @@ const NavBar = () => {
       className="navbar is-fixed-top"
       role="navigation"
       aria-label="main navigation"
-      style={{maxWidth: '100vw'}}
+      style={{ maxWidth: "100vw" }}
     >
       <div
         className="container pt-5"
@@ -50,8 +50,7 @@ const NavBar = () => {
             </p>
           </motion.a>
 
-          <a
-            role="button"
+          <button
             className={`navbar-burger ${toggle}`}
             aria-label="menu"
             aria-expanded="true"
@@ -61,7 +60,7 @@ const NavBar = () => {
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
-          </a>
+          </button>
         </div>
         {toggle === "is-active" && (
           <div className={`navbar-menu ${toggle}`} id="navbarBasicExample">

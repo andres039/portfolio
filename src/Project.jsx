@@ -19,7 +19,7 @@ const Project = ({ title, image, description, stack, type, code, timeDelay }) =>
       >
         <div className="card-image m-2" style={{ maxHeight: "60%" }}>
           <figure className="image is-4by3" style={{}}>
-            <img src={image} alt="Project image" />
+            <img src={image} alt="Projects example" />
           </figure>
         </div>
         <div className="card-header ">
