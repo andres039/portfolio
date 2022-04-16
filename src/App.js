@@ -1,3 +1,4 @@
+import './App.css'
 import NavBar from "./NavBar";
 import 'bulma/css/bulma.min.css';
 import Footer from "./Footer";

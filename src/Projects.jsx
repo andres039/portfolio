@@ -14,11 +14,11 @@ const Projects = () => {
         style={{ width: "100%" }}
       >
         <motion.h1
+          id='test'
           whileInView={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{ duration: 1 }}
           className="title mt-6 pt-6 mb-6 pb-6"
-          
         >
           Some of my Projects:
         </motion.h1>

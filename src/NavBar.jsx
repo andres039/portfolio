@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
+import './navbar.css'
 const NavBar = () => {
   const [toggle, setToggle] = useState("");
 
@@ -9,22 +9,23 @@ const NavBar = () => {
 
   return (
     <motion.nav
-      className="navbar is-fixed-top is-flex"
+      className="navbar is-fixed-top is-flex is-info test"
       role="navigation"
       aria-label="main navigation"
       style={{ maxWidth: "100vw" }}
     >
       <div
         className="container pt-5"
-         style={{borderBottom: '1px black solid'}}
+         
       >
         {toggle !== "is-active" && (
           <div
             className={`navbar-start navbar-menu ${toggle}`}
             id="navbarBasicExample"
           >
-            <div className="navbar-item is-size-5">
+            <div className="navbar-item is-size-5 has-text-danger">
               <motion.a
+              className="has-text-danger"
                 href="#skills"
                 animate={{ y: 0 }}
                 initial={{ y: -200 }}
@@ -42,7 +43,7 @@ const NavBar = () => {
             className="navbar-item"
             href="#top"
           >
-            <p className=" has-text-weight-bold is-size-3 p-2">
+            <p id='test' className=" has-text-weight-bold is-size-3 p-2">
               Andrés Beltrán
             </p>
           </motion.a>
@@ -77,7 +78,7 @@ const NavBar = () => {
               animate={{ y: 0 }}
               initial={{ y: -200 }}
               transition={{ delay: 0.5 }}
-              className="subTitle is-size-5"
+              className="subTitle is-size-5 has-text-danger"
               href="#projects"
             >
               <strong>Projects</strong>

@@ -22,7 +22,7 @@ const Project = ({ title, image, description, stack, type, code, timeDelay }) =>
             <img src={image} alt="Projects example" />
           </figure>
         </div>
-        <div className="card-header ">
+        <div className="card-header">
           <h1 className="card-header-title">{title}</h1>
           <div 
             className="column is-flex is-justify-content-end"
@@ -35,17 +35,17 @@ const Project = ({ title, image, description, stack, type, code, timeDelay }) =>
         </div>
 
         <div
-          className="card-content is-flex is-align-items-center mt-5"
-          style={{ height: "25%" }}
+          className="card-content is-flex mt-5"
+         
         >
-          <div className="content">
+          <div className="content" style={{minHeight: '40%'}}>
             <p>{description}</p>{" "}
             <p>
               <strong>Type of project: {type}</strong>
             </p>
           </div>
         </div>
-        <footer className="card-footer is-flex-wrap-wrap p-4">
+        <footer className="card-footer is-flex-wrap-wrap p-4" style={{maxHeight: '5%'}} >
           {stack.map((tech, index) => (
             <p className="has-text-info">
               {" "}
