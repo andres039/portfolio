@@ -37,6 +37,7 @@ const Projects = () => {
               stack={project.stack}
               type={project.type}
               code={project.code}
+              live={project.live}
               timeDelay={index !== 0 ? index - index/2 : index}
             />
           ))}

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import './navbar.css'
 const NavBar = () => {
   const [toggle, setToggle] = useState("");
 
@@ -25,7 +24,7 @@ const NavBar = () => {
           >
             <div className="navbar-item is-size-5 has-text-danger">
               <motion.a
-              className="has-text-danger"
+              className="has-text-warning"
                 href="#skills"
                 animate={{ y: 0 }}
                 initial={{ y: -200 }}
@@ -78,7 +77,7 @@ const NavBar = () => {
               animate={{ y: 0 }}
               initial={{ y: -200 }}
               transition={{ delay: 0.5 }}
-              className="subTitle is-size-5 has-text-danger"
+              className="subTitle is-size-5 has-text-warning"
               href="#projects"
             >
               <strong>Projects</strong>

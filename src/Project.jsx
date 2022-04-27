@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const linkCode = <FontAwesomeIcon icon={faCode} size="1x" color="red" />;
 
-const Project = ({ title, image, description, stack, type, code, timeDelay }) => {
+const Project = ({ title, image, description, stack, type, code, timeDelay, live }) => {
   return (
     <motion.div
       whileInView={{opacity: 1}} initial={{opacity: 0}} transition={{duration: 0.5, delay: timeDelay}}
@@ -31,6 +31,9 @@ const Project = ({ title, image, description, stack, type, code, timeDelay }) =>
             <motion.a className='tag is-warning' href={code} target="_blank" whileInView={{x: 0 }} initial={{x: -40}} transition={{duration: 0.5}}>
               <p class="subtitle is-7 p-2">{linkCode} Source Code</p>
             </motion.a>
+            {live !== '' && <motion.a className='tag is-success ml-2' href={live} target="_blank" whileInView={{x: 0 }} initial={{x: -40}} transition={{duration: 0.5}}>
+              <p class="subtitle is-7 p-2">{linkCode} Live</p>
+            </motion.a>}
           </div>
         </div>
 
