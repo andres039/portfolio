@@ -40,7 +40,12 @@ const Skills = () => {
             transition={{ duration: 1 }}
             className="title my-6"
           >
-            My Skills:
+            <div className="box">
+            <p>
+            My Skills: <br></br>
+            <span className="is-size-5">
+            (Or better, the technologies that I have spent the most time learning and applying. By no means do I consider myself an expert, but I should say that I know what information to look for and where the docs are when we have to tackle a problem.)</span></p>
+            </div>
           </motion.h1>
         </div>
         <motion.div
